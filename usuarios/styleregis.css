@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(images/bgsm.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+form {
+    width: 420px;
+    height: 697px;
+    background: #004b93;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 25px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+form .logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%; 
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 50px); 
+}
+
+form h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+form h1:hover {
+    color: #FD6100;
+}
+
+form label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+form label:hover {
+    color: #FD6100; 
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background:#FD6100;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #004b93;
+}
+
+form a {
+    font-size: 12px;
+    line-height: 20px;
+    color: white; 
+}
+form a:hover {
+    color: #FD6100;
+}
+
+form .btnytcu {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+}
+
+form p {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+}
+
+form .termsycon {
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: white;
+}
+
+h3 {
+    color: #FD6100;
+}

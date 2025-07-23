@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+/*Título ServiMaleño y Transición*/
+.logo {
+    color: #FD6100;
+    font-size: 25px;
+    font-weight: 800;
+}
+.logo:hover {
+    color: #004B93;
+}
+/*Fin de Título ServiMaleño y Transición*/
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+/*Barra de Navegación: Botones de Encabezado*/
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #004B93;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover {
+    -webkit-text-stroke: 1px black;
+    color: white;
+}
+/*Fin de Barra de Navegación: Botones de Encabezado*/
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.bg {
+    position: absolute;
+    width: 700px;
+    z-index: -1;
+    right: 0;
+}
+
+.esp {
+    position: absolute;
+    top: 700px;
+    bottom: 0;
+    width: 350px;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.header-txt {
+    width: 50%;
+    padding-right: 35px;
+}
+
+/*H1: Construyendo Soluciones de Software a tu medida y Transición*/
+.header-txt h1 {
+
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 600;
+    color: #004B93;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+
+}
+.header-txt h1:hover{
+    color: #FD6100;
+}
+/*Fin de H1: Construyendo Soluciones de Software a tu medida y Transición*/
+
+.header-txt p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 35px;
+}
+
+.header-img {
+    width: 50%;
+}
+
+.header-img img {
+    width: 550px;
+    border-radius: 40px;
+}
+
+/*Nuestro Equipo*/
+.container2 h1 {
+    font-size: 60px;
+    margin-bottom: 70px;
+    text-align: center;
+    color: #FD6100;
+}
+
+.container2 h1:hover {
+    color: #004B93;
+}
+
+.container2 {
+    margin-top: 5%;
+    background-color: transparent;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+.team {
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team .team-name {
+    background: #FD6100;
+    margin: 25px;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    line-height: 20px;
+    color: rgb(226, 233, 184);
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(138, 117, 117, 1);
+}
+
+.team .team-name h2 {
+    color: rgb(226, 222, 222);
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.team .team-name h2:hover {
+    color: #004B93;
+}
+
+.team .team-name p.role {
+    color: #004B93;
+    font-size: 23px;
+    text-transform: none;
+    margin: 15px auto;
+}
+.team .team-name p.role:hover {
+    color: white;
+}
+
+.team .team-name .team-img img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    transform: translate(-50%);
+    border: solid 5px #FD6100;
+}
+
+.team .team-name p.parrf {
+    color: white;
+}
+/*Fin de Nuestro Equipo*/
+
+.team .team-name .viw1 {
+    background-color: #004B93;
+    border-radius: 25px;
+    color: #FFFFFF;
+    border: 10px;
+    padding: 10px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.team .team-name .viw1:hover {
+    background-color: white;
+    color: #004B93;
+}
+
+hr {
+    border: 1px solid #EEE; 
+ }
+
+/*Título - Nuestro Organigrama*/
+.organigramacont-img h1 {
+    font-size: 50px;
+    margin-bottom: 70px;
+    margin-top: 5%;
+    text-align: center;
+    color: #FD6100;
+}
+.organigramacont-img h1:hover {
+    color: #004B93;
+}
+/*Fin de Título - Nuestro Organigrama*/
+
+/*Imagen de Organigrama*/
+.organigramacont-img img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+}
+/*Fin de Imagen de Organigrama*/
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+} 
+
+ .footer {
+     padding: 100px 0;
+ }
+ 
+ .footer-links {
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ /*H3: Redes Sociales y Transición*/
+ .link h3 {
+     font-size: 20px;
+     color: #FD6100;
+     margin-bottom: 20px;
+ }
+ .link h3:hover {
+     color: #004B93;
+ }
+
+ .text-contc {
+    color: #545454;
+}
+.text-contc:hover {
+    color: #004B93;
+    font-weight: bold
+}
+ /*Fin de H3: Redes Sociales y Transición*/
+ 
+ .socials img {
+     margin-right: 15px;
+ }
+ 
+ 
+ a {
+     font-size: 16px;
+     display: block;
+     margin-bottom: 10px;
+     color: #545454;
+ }
+
+/*Responsive*/
+@media(max-width: 991px) {
+
+    .menu {
+        padding: 30px;
+    }
+
+    .logo{
+        -webkit-text-stroke: 1px black;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #004B93;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: #FFFFFF;
+    }
+
+    .menu .navbar ul li a:hover {
+        background-color: #FFFFFF;
+        color: #FD6100;
+        -webkit-text-stroke: #FD6100;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .bg {
+        width: 500px;
+    }
+
+    .esp {
+        display: none;
+    }
+
+    .header-info {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .header.txt {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .header-txt h1 {
+        font-size: 40px;
+        line-height: 50px;
+        -webkit-text-stroke: 1px black;
+    }
+    .header-txt h1:hover {
+        color: white;
+    }
+
+    .header-img {
+        width: 100%;
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    .header-img img {
+        width: 300px;
+    }
+
+    .info {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-1 {
+
+        margin-bottom: 20px;
+    }
+
+    .team .team-name a {
+        left: 115px;
+    }
+    .team .team-name a:hover {
+        background-color: #FD6100;
+        color: white;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .socials {
+        margin-bottom: 25px;
+    }
+}
+/*Fin de Responsive*/

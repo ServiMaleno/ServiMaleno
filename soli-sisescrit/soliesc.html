@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitud para Sistemas de Escritorio - ServiMaleño</title>
+    <link rel="stylesheet" href="stysoliesc.css">
+    <link rel="icon" href="../images/formico.ico">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+</div>    
+
+    <!--Enlace Guía: https://www.youtube.com/watch?v=79E9nFlC7ro-->
+    <form action="https://formsubmit.co/corpservimal22@gmail.com" method="post">
+
+        <h2>Formulario de Solicitud</h2>
+        <h2 class="sisescrt">Sistemas de Escritorio</h2>
+
+        <div class="input-group">
+
+            <label for="name">Nombres y Apellidos</label>
+            <input type="text" name="Nombres y Apellidos del Cliente" id="name" placeholder="Ingrese sus Nombres y Apellidos">
+
+            <label for="phone">Teléfono Celular</label>
+            <input type="tel" name="Número de Teléfono Celular" id="phone" placeholder="Ingrese su Número de Teléfono">
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" name="Correo Electrónico" id="email" placeholder="Ingrese su Correo Electrónico">
+
+            <label for="message">Fundamentos del Pedido</label>
+            <textarea name="Pedido del Cliente" id="message" cols="30" rows="5" placeholder="Escriba Aquí su Solicitud"></textarea>
+
+            <div class="form-txt">
+                <a href="#">Política de Privacidad</a>
+                <a href="../termsycond/termsycondi.html">Términos y Condiciones</a>
+            </div>
+
+            <input class="btn" type="submit" onclick="mostrar()" value="Solicitar">
+            <a href="../index.html" class="btnsalir"><b>← Ir a Inicio</b></a>
+
+            <script type="text/javascript">
+
+                function mostrar(){
+        
+                    swal('Solicitud Enviada','Gracias por rellenar este formulario','success');
+        
+                }
+        
+            </script>
+
+            <input type="hidden" name="_next" value="http://localhost:8080/Projects/ServiMaleño/soli-sisescrit/soliesc.html">
+            <input type="hidden" name="_captcha" value="false">
+
+        </div>
+    </form>
+
+</body>
+</html>
