@@ -133,10 +133,12 @@ body{
     color: #FFFFFF;
     text-transform: capitalize;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-1:hover {
     background-color: #004B93;
+    transform: scale(1.05);
 }
 /*Fin de Botón de Más Información y Transición*/
 
@@ -277,6 +279,13 @@ body{
     border-radius: 25px 25px 0 0;
 }
 
+.product .btn-locati{
+    transform: transition 0.3s ease;
+}
+.product .btn-locati:hover {
+    transform: scale(1.05);
+}
+
 /*Título de Servicios*/
 .product h3 {
     font-size: 20px;
@@ -336,10 +345,38 @@ hr {
 }
 /*Fin de H3: Redes Sociales y Transición*/
 
-.socials img {
-    margin-right: 15px;
+.socials {
+  display: flex;
+  align-items: center;
 }
 
+.socials a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.socials i {
+  font-size: 30px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.facebook{
+    color: #3b5998;
+}
+.twitter{
+    color: #1da1f2;
+}
+.linkedin{
+    color: #0077b5;
+}
+.instagram{
+    color: #e4405f;
+}
+.socials i:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
 
 a {
     font-size: 16px;
@@ -362,6 +399,10 @@ a {
 
     .logo {
         -webkit-text-stroke: 1px black;
+        color: #FFFFFF;
+    }
+    .logo:hover {
+        -webkit-text-stroke: 0.5px #FFFFFF;
     }
 
     .menu .navbar {
@@ -371,6 +412,15 @@ a {
         right: 0;
         background-color: #004B93;
         display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+        opacity: 1;
+        visibility: visible;
     }
 
     .menu .navbar ul li {
@@ -415,6 +465,10 @@ a {
         line-height: 50px;
         -webkit-text-stroke: 1px black;
     }
+    .header-txt h1:hover{
+        -webkit-text-stroke: 1px #FFFFFF;
+        color: #004B93;
+    }
 
     .header-img {
         width: 100%;
@@ -433,7 +487,6 @@ a {
     }
 
     .info-1 {
-
         margin-bottom: 20px;
     }
 
