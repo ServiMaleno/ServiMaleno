@@ -12,7 +12,7 @@
     
     <form method="post" action="registrar.php">
 
-    <img class="logo" src="images/user.png" alt="logosm">
+    <img class="logo" src="../images/images-usuarios/user.png" alt="logosm">
     <h1>Crear una Nueva Cuenta</h1>
 
         <div class="input-wrapper">

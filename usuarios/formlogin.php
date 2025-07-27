@@ -11,7 +11,7 @@
 <body>
 
     <div class="login-box">
-        <img class="avatar" src="images/user.png" alt="Logo de SM">
+        <img class="avatar" src="../images/images-usuarios/user.png" alt="Logo de SM">
         <h1>Iniciar Sesión</h1>
         <form action="validar.php" method="post">
             <label for="username">Correo</label>

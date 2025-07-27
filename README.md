@@ -1,5 +1,11 @@
 ## README.md 👋
 
 <!--
-En este apartado se escribirán comentarios
+Pasos para correr Python en el proyecto clonado:
+
+1. Instalar la librería pymysql a través de CMD [pip install pymysql]
+2. Abrir CMD y acceder a la ruta de la carpeta "python" de este proyecto [cd "ruta"]
+3. Luego ejecutar el comando [python pruebaConexion.py]
+
+NOTA: Para ver el resultado de este código, previamente se debe registrar al menos un usuario en la base de datos local.
 -->
