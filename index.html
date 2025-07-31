@@ -270,6 +270,27 @@
             </div>
         </div>
     </footer>
+
+    <!-- ChatBot flotante ServiMaleño -->
+    <div id="chatbot-button" onclick="toggleChat()">
+    💬
+    </div>
+    <div id="chat-window">
+    <div id="chat-header">
+        <img src="images/icosvm.ico" alt="Logo" id="chat-logo">
+        Chat ServiMaleño
+        <span id="chat-close-btn" onclick="closeChat()">✖</span>
+        <button id="toggle-voice" class="toggle-voice" onclick="toggleVoice()">🔈</button>
+    </div>
+    <div id="chat-box"></div>
+    <div id="chat-input">
+        <input type="text" id="user-input" placeholder="Escribe tu mensaje..." />
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+    </div>
+    <script src="python/chatbot/chatbot.js"></script>
+    <!-- Fin de ChatBot flotante ServiMaleño -->
+
 </body>
 
 </html>

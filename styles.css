@@ -654,3 +654,140 @@ a {
     color: #FD6100;
 }
 /*Fin de Cards de Noticias*/
+
+
+/*Chatbot Styles*/
+#chatbot-button {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  background: #004B93;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+#chatbot-button:hover {
+  background: #FD6100;
+}
+
+#chat-window {
+  position: fixed;
+  bottom: 150px;
+  left: 20px;
+  width: 300px;
+  background: white;
+  border: 2px solid #004B93;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 999;
+  animation: slideUp 0.3s ease-out;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#chat-window.fade-out {
+  opacity: 0;
+}
+
+#chat-window.fade-in {
+  opacity: 1;
+}
+
+#chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #004B93;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#chat-logo {
+    width: 27px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+#chat-close-btn {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: 5px;
+    color: white;
+}
+
+#chat-close-btn:hover {
+  color: #FFCCCC;
+}
+
+#chat-box {
+  padding: 10px;
+  height: 220px;
+  overflow-y: auto;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+#chat-box div {
+    padding: 5px;
+    margin: 4px 0;
+}
+
+#chat-box div strong {
+    color: #0056B3;
+}
+
+#chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+#chat-input input {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  outline: none;
+}
+
+#chat-input button {
+  background: #FD6100;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.toggle-voice {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*Fin de Chatbot Styles*/
