@@ -8,4 +8,13 @@ Pasos para correr Python en el proyecto clonado:
 3. Luego ejecutar el comando [python pruebaConexion.py]
 
 NOTA: Para ver el resultado de este código, previamente se debe registrar al menos un usuario en la base de datos local.
+
+------
+Pasos para correr el chatbot de Python:
+
+1. Instalar las librerías "flask" y "flask-cors" (no se mueve nada en el código)
+2. Ir a chatbot.py y darle clic en Ejecutar
+3. Abrir la página desde index.html
+4. Probar el chatbot.
+
 -->
