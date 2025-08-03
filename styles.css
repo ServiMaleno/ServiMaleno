@@ -672,10 +672,11 @@ a {
   cursor: pointer;
   z-index: 999;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: background 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 #chatbot-button:hover {
   background: #FD6100;
+  transform: scale(1.05);
 }
 
 #chat-window {
